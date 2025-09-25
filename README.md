@@ -1,47 +1,55 @@
 # Exno.8-Prompt-Engg
-# Date: 24/09/25
+# Date: 25/09/25
 # Register no: 212223240146
-# Aim: To perform the Exploration of Prompting Techniques for Audio Generation
+# Aim: 
+You possess a portrait in classic realism. How would you prompt the AI to reproduce it as a stylized digital anime version, maintaining the character’s expression and pose?
 
-# Algorithm:
-1. Identify the Goal
+# Algorithm: 
 
-    Decide whether the audio to be generated is music, narration, or sound effects.
+## 1.Input Image: 
+Provide the original realistic portrait.
 
-2. Design the Prompt
+## 2.Define Constraints: 
+Maintain pose, facial expression, and identity.
 
-    Use descriptive prompts including mood, style, instruments, genre, or voice tone.
+## 3.Prompt Construction:
 
-Example: “Generate calm background music with soft piano and ambient strings for relaxation.”
+Subject → "portrait of [character]"
 
-3. Experiment with Prompting Techniques
+Style → "anime, digital art, clean line art, vibrant colors"
 
-    Zero-shot prompting: Directly asking the model without examples.
+Constraints → "same expression, same pose, retain hairstyle"
 
-    Few-shot prompting: Providing short examples of desired outputs.
+Negative → "no realism, no distortion, no extra limbs"
 
-    Instruction-based prompting: Using explicit instructions like tempo, pitch, rhythm, voice type.
+## 4.Iterative Refinement: 
+Start with a simple prompt → add style refinements → enforce constraints with negatives.
 
-    Refinement prompting: Iteratively modifying prompts to improve results.
+## 5.Generate Output: 
+Use text-to-image or image-to-image AI models (e.g., Stable Diffusion, MidJourney, DALL·E).
 
-4. Generate Audio
+## 6.Compare Outputs: 
+Observe fidelity to pose/expression and anime stylization quality.
 
-    Use an AI audio generation tool/model (e.g., text-to-music, text-to-speech).
+# Sample Prompts & Outputs
+### Prompt 1 – Simple
 
-5. Evaluate Output
+"Anime version of this portrait, keeping the same pose and facial expression."
+Output → Basic anime filter applied, recognizable but generic.
 
-    Check if the generated audio matches the style and requirements of the prompt.
+### Prompt 2 – Detailed Style
 
-6. Refine Prompt if Needed
+"Transform this portrait into a detailed anime illustration, same pose and expression. Retain hairstyle and clothing, adapt features into anime proportions with large expressive eyes and smooth shading. Vibrant colors and glowing background."
+Output → Clear anime features, expression preserved, artistic improvements visible.
 
-    Adjust words, add constraints (e.g., “fast-paced,” “female narrator”), or simplify until output is satisfactory.
+### Prompt 3 – Advanced with Negatives
 
-# Sample Prompts & Outputs:
-<img width="1536" height="1024" alt="ChatGPT Image Sep 19, 2025, 03_20_20 PM" src="https://github.com/user-attachments/assets/ae13009d-70ec-4137-af74-ab96a80a5a4b" />
+"Recreate this realistic portrait in modern digital anime style. Keep identical pose, facial expression, hairstyle, and outfit. Use clean line art, cel-shading, soft gradients, glowing pastel background. Avoid realism, distortions, extra limbs, or changing the expression."
+Output → Highly stylized anime artwork, faithful to reference identity and pose, with professional finish.
 
+# Diagram:
 
-# Diagram
-<img width="1024" height="1536" alt="ChatGPT Image Sep 19, 2025, 03_16_40 PM" src="https://github.com/user-attachments/assets/62f3f1c5-0c6b-46e8-b424-aa4d1af9cbe7" />
-
-
-# Result: The Prompt for the above process executed successfully
+ <img width="1280" height="1006" alt="image" src="https://github.com/user-attachments/assets/7150e64e-2a8b-4307-98e2-4c2f77aa0ae9" />
+ 
+# Result:
+By refining prompts step by step, the AI was successfully guided to generate an anime-styled version of the portrait, preserving expression and pose while applying stylistic elements like anime line art, expressive eyes, and vibrant shading. This exploration shows that structured prompt engineering + iterative refinement yields more controlled and consistent results.
